@@ -26,6 +26,9 @@
 main {
     background-color: black;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+
 
     #myVideo {
         position: fixed;
@@ -36,19 +39,24 @@ main {
     }
 
     .navbar {
-        width: 700px;
-        border-bottom: 5px solid $orange;
+        width: 60%;
+        border-bottom: 5px solid white;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         position: fixed;
         bottom: 50%;
         color: #f1f1f1;
-        width: 100%;
         padding: 20px;
 
         a {
             text-decoration: none;
             color: white;
+            font-size: 1.2rem;
+            height: 100%;
+
+            &:hover {
+                color: $orange;
+            }
         }
     }
 }
