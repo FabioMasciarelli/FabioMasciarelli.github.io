@@ -37,7 +37,7 @@ main {
 
     .navbar {
         width: 700px;
-        border-bottom: 5px solid white;
+        border-bottom: 5px solid $orange;
         display: flex;
         justify-content: space-evenly;
         position: fixed;
