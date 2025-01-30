@@ -17,12 +17,13 @@ export default {
             <h1>Hi! I'm <span>Fabio</span>,</h1>
             <h3>Full Stack Web Developer</h3>
         </div>
-        <nav :class="presentation == false ? 'navbar-top' : 'navbar'">
+        <nav :class="presentation == false ? 'navbar-top' : 'navbar'" class="nav-link">
             <router-link :to="{ name: 'home' }" @click="presentation = true"><img
                     src="../assets/Moodboard Rafea Mamdooh.jpeg" alt="logo"></router-link>
             <router-link :to="{ name: 'about' }" @click="presentation = false">About</router-link>
-            <router-link :to="{}">ciao</router-link>
-            <router-link :to="{}">ciao</router-link>
+            <router-link :to="{}">Certifications</router-link>
+            <router-link :to="{}">Projects</router-link>
+            <router-link :to="{}">Contacts</router-link>
         </nav>
     </section>
 </template>
