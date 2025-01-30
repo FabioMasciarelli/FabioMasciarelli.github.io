@@ -19,7 +19,7 @@ export default {
         </div>
         <nav :class="presentation == false ? 'navbar-top' : 'navbar'" class="nav-link">
             <router-link :to="{ name: 'home' }" @click="presentation = true"><img
-                    src="../assets/Moodboard Rafea Mamdooh.jpeg" alt="logo"></router-link>
+                    src="../assets/fm.jpg" alt="logo"></router-link>
             <router-link :to="{ name: 'about' }" @click="presentation = false">About</router-link>
             <router-link :to="{}">Certifications</router-link>
             <router-link :to="{}">Projects</router-link>
@@ -35,6 +35,7 @@ export default {
     0% {
         top: +35%;
     }
+
     100% {
         top: 0;
     }
@@ -78,6 +79,7 @@ section {
 
         h1 {
             font-size: 4rem;
+
             span {
                 color: $orange;
             }
@@ -97,7 +99,7 @@ section {
         border-bottom: 2px solid white;
 
         img {
-            width: 35px;
+            height: 35px;
         }
 
         a {
