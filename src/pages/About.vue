@@ -17,32 +17,32 @@
             <hr>
             <h2>CODE</h2>
         </div>
-        <div class="code">
-            <span>
+        <ul class="code">
+            <li>
                 <i class="fa-brands fa-html5"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-css3-alt"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-bootstrap"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-js"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-vuejs"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-php"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-brands fa-laravel"></i>
-            </span>
-            <span>
+            </li>
+            <li>
                 <i class="fa-solid fa-database"></i>
-            </span>
-        </div>
+            </li>
+        </ul>
     </section>
 </template>
 
@@ -69,7 +69,7 @@ section {
     .code {
         display: flex;
 
-        span {
+        li {
             padding: 10px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.3);

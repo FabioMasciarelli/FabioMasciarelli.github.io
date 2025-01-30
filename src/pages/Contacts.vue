@@ -11,12 +11,12 @@
             <h2>CONTACTS</h2>
         </div>
         <h3>Let's stay in touch!</h3>
-        <div class="contacts">
-            <span><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i
-                        class="fa-brands fa-linkedin"></i></a></span>
-            <span><a href="https://github.com/FabioMasciarelli"><i class="fa-brands fa-square-github"></i></a></span>
-            <span><a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a></span>
-        </div>
+        <ul class="contacts">
+            <li><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/FabioMasciarelli"><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
     </section>
 </template>
 
@@ -41,7 +41,7 @@ section {
         display: flex;
         justify-content: space-between;
 
-        span {
+        li {
             background-color: rgba(255, 255, 255, 0.3);
             padding: 10px;
             border-radius: 50%;
