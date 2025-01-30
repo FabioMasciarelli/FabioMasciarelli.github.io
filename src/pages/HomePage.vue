@@ -18,12 +18,11 @@ export default {
             <h3>Full Stack Web Developer</h3>
         </div>
         <nav :class="presentation == false ? 'navbar-top' : 'navbar'" class="nav-link">
-            <router-link :to="{ name: 'home' }" @click="presentation = true"><img src="../assets/fm.jpg"
+            <router-link :to="{ name: 'home' }" @click="presentation = true"><img src="../assets/img/fm.jpg"
                     alt="logo"></router-link>
             <router-link :to="{ name: 'about' }" @click="presentation = false">About</router-link>
-            <router-link :to="{ name: 'certifications' }" @click="presentation = false">Certifications</router-link>
             <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
-            <router-link :to="{ name: 'contacts' }" @click="presentation = false">Contacts</router-link>
+            <router-link :to="{ name: 'contact' }" @click="presentation = false">Contact</router-link>
         </nav>
     </section>
 </template>
@@ -46,7 +45,7 @@ export default {
     z-index: 1;
     position: absolute;
     top: 0;
-    animation: top-motion 0.5s linear;
+    animation: top-motion 0.3s linear;
 
     a {
         text-decoration: none;

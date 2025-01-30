@@ -8,9 +8,9 @@
     <section>
         <div class="nav">
             <hr>
-            <h2>CONTACTS</h2>
+            <h2>CONTACT</h2>
         </div>
-        <h3>Let's stay in touch!</h3>
+        <h3>Let's get in touch!</h3>
         <!-- From Uiverse.io by david-mohseni -->
         <ul class="wrapper contacts">
             <li class="icon contact">
