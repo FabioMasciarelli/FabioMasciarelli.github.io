@@ -12,7 +12,8 @@
         </div>
         <h3>Let's stay in touch!</h3>
         <div class="contacts">
-            <h4><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i class="fa-brands fa-linkedin"></i></a></h4>
+            <h4><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i
+                        class="fa-brands fa-linkedin"></i></a></h4>
             <h4><a href="https://github.com/FabioMasciarelli"><i class="fa-brands fa-square-github"></i></a></h4>
             <h4><a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a></h4>
         </div>
@@ -21,10 +22,6 @@
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
-
-a {
-    color: white;
-}
 
 section {
     width: 100%;
@@ -44,16 +41,29 @@ section {
         display: flex;
         justify-content: space-between;
 
-        i {
-            font-size: 3.3rem;
+        h4 {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 50%;
 
             &:hover {
+                background-color: $orange;
+                transition: background-color .4s linear;
+            }
+
+            &:active {
                 transform: scale(1.4);
-                transition: transform .2s linear;
-                color: $orange;
+                transition: transform .3s linear;
+            }
+
+            a {
+                color: white;
+
+                i {
+                    font-size: 2.7rem;
+                }
             }
         }
     }
-
 }
 </style>
