@@ -1,3 +1,4 @@
+@use "../style/partials/variables" as *;
 @import"@fortawesome/fontawesome-free/css/all.min.css";
 
 * {
@@ -5,4 +6,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto Slab;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    hr {
+        margin-right: 10px;
+        width: 100px;
+        height: 5px;
+        border: 0;
+        background-color: $orange;
+    }
 }

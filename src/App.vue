@@ -9,18 +9,18 @@ export default {
 </script>
 
 <template>
-  <div>
+  <main>
     <video autoplay muted loop id="myVideo">
       <source src="./assets/code.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <HomePage />
     <router-view></router-view>
-  </div>
+  </main>
 </template>
 
 <style scoped lang="scss">
-div {
+main {
   height: 100vh;
 
   #myVideo {
