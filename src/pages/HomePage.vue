@@ -18,12 +18,12 @@ export default {
             <h3>Full Stack Web Developer</h3>
         </div>
         <nav :class="presentation == false ? 'navbar-top' : 'navbar'" class="nav-link">
-            <router-link :to="{ name: 'home' }" @click="presentation = true"><img
-                    src="../assets/fm.jpg" alt="logo"></router-link>
+            <router-link :to="{ name: 'home' }" @click="presentation = true"><img src="../assets/fm.jpg"
+                    alt="logo"></router-link>
             <router-link :to="{ name: 'about' }" @click="presentation = false">About</router-link>
-            <router-link :to="{}">Certifications</router-link>
-            <router-link :to="{}">Projects</router-link>
-            <router-link :to="{}">Contacts</router-link>
+            <router-link :to="{}" @click="presentation = false">Certifications</router-link>
+            <router-link :to="{}" @click="presentation = false">Projects</router-link>
+            <router-link :to="{ name: 'contacts' }" @click="presentation = false">Contacts</router-link>
         </nav>
     </section>
 </template>
