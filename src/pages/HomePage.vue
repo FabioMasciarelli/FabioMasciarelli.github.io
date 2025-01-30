@@ -22,7 +22,7 @@ export default {
                     alt="logo"></router-link>
             <router-link :to="{ name: 'about' }" @click="presentation = false">About</router-link>
             <router-link :to="{}" @click="presentation = false">Certifications</router-link>
-            <router-link :to="{}" @click="presentation = false">Projects</router-link>
+            <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
             <router-link :to="{ name: 'contacts' }" @click="presentation = false">Contacts</router-link>
         </nav>
     </section>

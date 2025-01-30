@@ -12,10 +12,10 @@
         </div>
         <h3>Let's stay in touch!</h3>
         <div class="contacts">
-            <h4><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i
-                        class="fa-brands fa-linkedin"></i></a></h4>
-            <h4><a href="https://github.com/FabioMasciarelli"><i class="fa-brands fa-square-github"></i></a></h4>
-            <h4><a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a></h4>
+            <span><a href="https://www.linkedin.com/in/fabio-masciarelli-1605b7304/"><i
+                        class="fa-brands fa-linkedin"></i></a></span>
+            <span><a href="https://github.com/FabioMasciarelli"><i class="fa-brands fa-square-github"></i></a></span>
+            <span><a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a></span>
         </div>
     </section>
 </template>
@@ -41,10 +41,15 @@ section {
         display: flex;
         justify-content: space-between;
 
-        h4 {
+        span {
             background-color: rgba(255, 255, 255, 0.3);
             padding: 10px;
             border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &:hover {
                 background-color: $orange;

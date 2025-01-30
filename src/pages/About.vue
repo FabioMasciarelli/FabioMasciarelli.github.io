@@ -18,9 +18,31 @@
             <h2>CODE</h2>
         </div>
         <div class="code">
-
+            <span>
+                <i class="fa-brands fa-html5"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-css3-alt"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-bootstrap"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-js"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-vuejs"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-php"></i>
+            </span>
+            <span>
+                <i class="fa-brands fa-laravel"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-database"></i>
+            </span>
         </div>
-
     </section>
 </template>
 
@@ -40,6 +62,31 @@ section {
         p {
             a {
                 color: $orange;
+            }
+        }
+    }
+
+    .code {
+        display: flex;
+
+        span {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin-right: 30px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: $orange;
+                transition: background-color .4s linear;
+            }
+
+            i {
+                font-size: 2.7rem;
             }
         }
     }
