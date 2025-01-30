@@ -71,17 +71,20 @@ section {
     #presentation {
         z-index: 1;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 60%;
 
         h1 {
             font-size: 4rem;
-
             span {
                 color: $orange;
             }
         }
 
         h3 {
-            font-size: 2rem;
+            font-size: 2.3rem;
         }
     }
 
