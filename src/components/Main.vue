@@ -6,11 +6,10 @@
 
 <template>
     <main>
-        <video autoplay muted loop id="myVideo">
-            <source src="../assets/code.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-
+        <div id="presentation">
+            <h1>Hi! I'm <span>Fabio</span>,</h1>
+            <h3>Full Stack Web Developer</h3>
+        </div>
         <nav class="navbar">
             <img src="" alt="logo">
             <a href="">ciao</a>
@@ -24,18 +23,27 @@
 @use "../style/partials/variables" as *;
 
 main {
-    background-color: black;
-    height: 100vh;
+    background-color: transparent;
     display: flex;
     justify-content: center;
 
-
-    #myVideo {
+    #presentation {
         position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        color: white;
+        top: 30%;
+        left: 25%;
+
+        h1 {
+            font-size: 4rem;
+
+            span {
+                color: $orange;
+            }
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
     }
 
     .navbar {
@@ -44,7 +52,7 @@ main {
         display: flex;
         justify-content: space-between;
         position: fixed;
-        bottom: 50%;
+        bottom: 35%;
         color: #f1f1f1;
         padding: 20px;
 
