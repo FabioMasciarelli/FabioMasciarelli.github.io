@@ -14,7 +14,7 @@ export default {
 
 <template>
     <section>
-        <div id="presentation" v-show="store.presentation == true">
+        <div id="presentation" v-show="this.$route.name == 'home'">
             <h1>Hi! I'm <span>Fabio</span>,</h1>
             <h3>Full Stack Web Developer</h3>
         </div>

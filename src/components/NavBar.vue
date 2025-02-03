@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <nav :class="store.presentation == false ? 'navbar-top' : 'navbar-middle'" class="nav-link">
+    <nav class="nav-link" :class="this.$route.name == 'home' ? 'navbar-middle' : ''">
         <router-link :to="{ name: 'home' }" @click="store.presentation = true"><img src="../assets/img/fm.png"
                 alt="logo"></router-link>
         <router-link :to="{ name: 'about' }" @click="store.presentation = false">About</router-link>
@@ -32,16 +32,6 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
-@keyframes top-motion {
-    0% {
-        top: +40%;
-    }
-
-    100% {
-        top: 0;
-    }
-}
-
 nav {
     margin: 0 auto;
     width: 60%;
@@ -49,6 +39,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
+    transition: display 1s linear;
 
     img {
         height: 35px;
@@ -64,10 +55,6 @@ nav {
             color: $orange;
         }
     }
-}
-
-.navbar-top {
-    background-color: transparent;
 }
 
 .navbar-middle {
