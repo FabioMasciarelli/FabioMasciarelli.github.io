@@ -1,10 +1,12 @@
 <script>
 import HomePage from './pages/HomePage.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
   components: {
     HomePage,
-  },
+    NavBar
+  }
 }
 </script>
 
@@ -14,17 +16,20 @@ export default {
       <source src="./assets/code.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <HomePage />
-    <router-view></router-view>
+    <NavBar />
+    <div>
+      <router-view></router-view>
+    </div>
   </main>
 </template>
 
 <style scoped lang="scss">
 main {
   height: 100vh;
+  position: relative;
 
   #myVideo {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     right: 0;
     bottom: 0;
@@ -32,5 +37,4 @@ main {
     min-height: 100%;
   }
 }
-
 </style>

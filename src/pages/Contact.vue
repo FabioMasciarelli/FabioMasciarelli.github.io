@@ -98,10 +98,7 @@
 
 section {
     width: 100%;
-    z-index: 2;
-    position: fixed;
     color: white;
-    top: 10%;
     padding: 50px;
 
     h3 {
