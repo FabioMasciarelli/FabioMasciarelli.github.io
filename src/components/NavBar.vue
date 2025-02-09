@@ -39,7 +39,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
-    transition: display 1s linear;
+    transition: all .5s linear;
 
     img {
         height: 35px;
@@ -62,5 +62,6 @@ nav {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all .5s linear; /* Aggiungi transizione qui */
 }
 </style>

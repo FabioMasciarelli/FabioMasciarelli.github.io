@@ -1,10 +1,8 @@
 <script>
-import HomePage from './pages/HomePage.vue';
 import NavBar from './components/NavBar.vue';
 
 export default {
   components: {
-    HomePage,
     NavBar
   }
 }
@@ -17,7 +15,7 @@ export default {
       Your browser does not support HTML5 video.
     </video>
     <NavBar />
-    <div>
+    <div class="paginator">
       <router-view></router-view>
     </div>
   </main>
@@ -27,6 +25,7 @@ export default {
 main {
   height: 100vh;
   position: relative;
+  overflow-y: hidden;
 
   #myVideo {
     position: fixed;

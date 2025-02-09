@@ -27,6 +27,10 @@
                 <a href="mailto:fabiomasciarelliwd@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </li>
         </ul>
+
+        <footer>
+            <i class="fa-regular fa-copyright"></i> 2025 | Fabio Masciarelli | All rights are reserved
+        </footer>
     </section>
 </template>
 
@@ -140,5 +144,12 @@ section {
             }
         }
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 </style>
