@@ -1,5 +1,5 @@
 <script>
-import { store }  from '../store.js/';
+import { store } from '../store.js/';
 
 export default {
     data() {
@@ -24,6 +24,18 @@ export default {
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
 
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 section {
     height: 100vh;
     display: flex;
@@ -38,6 +50,7 @@ section {
         flex-direction: column;
         align-items: start;
         width: 60%;
+        animation: slide-down 1s ease-out;
 
         h1 {
             font-size: 4rem;

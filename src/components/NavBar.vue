@@ -20,17 +20,21 @@ export default {
 
 <template>
     <nav class="nav-link" :class="this.$route.name == 'home' ? 'navbar-middle' : ''">
-        <router-link :to="{ name: 'home' }" @click="store.presentation = true"><img src="../assets/img/fm.png"
+        <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true"><img src="../assets/img/fm.png"
                 alt="logo"></router-link>
-        <router-link :to="{ name: 'about' }" @click="store.presentation = false">About</router-link>
+        <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }" @click="store.presentation = false">About</router-link>
         <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
-        <router-link :to="{ name: 'contact' }" @click="store.presentation = false">Contact</router-link>
+        <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }" @click="store.presentation = false">Contact</router-link>
     </nav>
 </template>
 
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.active {
+    color: $orange;
+}
 
 nav {
     margin: 0 auto;
@@ -62,6 +66,5 @@ nav {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .5s linear; /* Aggiungi transizione qui */
 }
 </style>
