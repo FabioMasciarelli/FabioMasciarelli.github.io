@@ -20,8 +20,7 @@ export default {
 
 <template>
     <nav class="nav-link" :class="this.$route.name == 'home' ? 'navbar-middle' : ''">
-        <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true"><img src="../assets/img/fm.png"
-                alt="logo"></router-link>
+        <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true">Home</router-link>
         <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }" @click="store.presentation = false">About</router-link>
         <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
         <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }" @click="store.presentation = false">Contact</router-link>
@@ -44,17 +43,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid $main;
-    transition: all .5s linear;
     color: $main;
-
-    img {
-        height: 35px;
-    }
 
     a {
         text-decoration: none;
         font-size: 1.2rem;
         height: 100%;
+        padding: 10px;
 
         &:hover {
             color: white;

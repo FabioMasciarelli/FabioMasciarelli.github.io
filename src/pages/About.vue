@@ -121,6 +121,7 @@
 .wrapper .code:hover .tooltip,
 .wrapper .code:hover .tooltip::before {
     background: $orange;
+    color: white;
 }
 
 
@@ -153,13 +154,12 @@ section {
             justify-content: center;
             align-items: center;
 
-            &:hover {
-                background-color: $orange;
-                transition: background-color .4s linear;
-            }
-
             i {
                 font-size: 2.7rem;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     }

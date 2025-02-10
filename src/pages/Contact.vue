@@ -97,6 +97,7 @@
 .wrapper .contact:hover .tooltip,
 .wrapper .contact:hover .tooltip::before {
     background: $orange;
+    color: white;
 }
 
 
@@ -140,6 +141,10 @@ section {
 
                 i {
                     font-size: 2.7rem;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
