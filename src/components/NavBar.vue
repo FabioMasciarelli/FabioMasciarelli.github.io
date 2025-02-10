@@ -33,7 +33,8 @@ export default {
 @use "../style/partials/variables" as *;
 
 .active {
-    color: $orange;
+    color: white;
+    border-bottom: 2px solid $main;
 }
 
 nav {
@@ -42,8 +43,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $main;
     transition: all .5s linear;
+    color: $main;
 
     img {
         height: 35px;
@@ -51,12 +53,11 @@ nav {
 
     a {
         text-decoration: none;
-        color: white;
         font-size: 1.2rem;
         height: 100%;
 
         &:hover {
-            color: $orange;
+            color: white;
         }
     }
 }
