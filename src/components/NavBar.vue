@@ -19,12 +19,15 @@ export default {
 </script>
 
 <template>
-    <nav class="nav-link" :class="this.$route.name == 'home' ? 'navbar-middle' : ''">
-        <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true">Home</router-link>
-        <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }" @click="store.presentation = false">About</router-link>
-        <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
-        <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }" @click="store.presentation = false">Contact</router-link>
-    </nav>
+
+    <div>
+        <nav class="nav-link">
+            <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true">Home</router-link>
+            <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }" @click="store.presentation = false">About</router-link>
+            <!-- <router-link :to="{}" @click="presentation = false">Projects</router-link> -->
+            <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }" @click="store.presentation = false">Contact</router-link>
+        </nav>
+    </div>
 </template>
 
 
@@ -32,35 +35,36 @@ export default {
 @use "../style/partials/variables" as *;
 
 .active {
-    color: white;
-    border-bottom: 2px solid $main;
+    color: $orange;
 }
 
-nav {
-    margin: 0 auto;
-    width: 60%;
+div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid $main;
-    color: $main;
-
-    a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        height: 100%;
+    justify-content: center;
+    
+    .nav-link {
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
         padding: 10px;
+        position: fixed;
+        bottom: 10px;
+        margin: auto;
+        background-color: black;
+        border-radius: 16px;
 
-        &:hover {
-            color: white;
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            height: 100%;
+            padding: 5px 10px;
+            border-radius: 16px;
+    
+            &:hover {
+                color: white;
+            }
         }
     }
-}
-
-.navbar-middle {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 </style>

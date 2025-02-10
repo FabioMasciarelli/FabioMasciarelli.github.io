@@ -100,11 +100,23 @@
     color: white;
 }
 
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 section {
     width: 100%;
     color: white;
     padding: 50px;
+    animation: slide-down 1s ease-out;
 
     h3 {
         text-align: center;

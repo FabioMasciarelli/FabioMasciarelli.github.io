@@ -14,10 +14,10 @@ export default {
       <source src="./assets/code.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <NavBar />
     <div class="paginator">
       <router-view></router-view>
     </div>
+    <NavBar />
   </main>
 </template>
 
@@ -25,7 +25,6 @@ export default {
 main {
   height: 100vh;
   position: relative;
-  overflow-y: hidden;
 
   #myVideo {
     position: fixed;

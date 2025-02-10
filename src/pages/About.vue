@@ -12,6 +12,7 @@
         </div>
         <div class="description">
             <p>Hi, my name is Fabio Masciarelli, i'm from Italy and i have 21 y.o.</p>
+            <img src="../assets/img/fm.png" alt="">
         </div>
         <div class="nav">
             <hr>
@@ -124,19 +125,38 @@
     color: white;
 }
 
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 section {
     width: 100%;
     color: white;
     padding: 50px;
+    animation: slide-down 1s ease-out;
 
     .description {
+        display: flex;
         margin-bottom: 100px;
 
         p {
             a {
                 color: $orange;
             }
+        }
+
+        img {
+            height: 300px;
+            width: auto;
         }
     }
 
