@@ -49,7 +49,7 @@ export default {
 <template>
     <section>
         <div id="presentation" v-show="this.$route.name == 'home'">
-            <h1>Hi! I'm <span>{{ displayText }}</span>.</h1>
+            <h1>Hi! I'm <span>{{ displayText }}</span><span class="cursor">|</span>.</h1>
             <h3>Full Stack Web Developer</h3>
         </div>
     </section>
