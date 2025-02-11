@@ -11,7 +11,7 @@
         <ul class="projects">
             <li class="card">
                 <img src="../assets/img/fm.jpg" alt="">
-                <span><i class="fa-regular fa-heart"></i> 297</span>
+                <div class="description"><a href="">Transport Site</a></div>
             </li>
             <li class="card"></li>
             <li class="card"></li>
@@ -38,6 +38,18 @@
     }
 }
 
+@keyframes slide-up {
+    from {
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
 section {
     padding: 50px;
     animation: slide-down 1s ease-out;
@@ -52,22 +64,38 @@ section {
             width: calc(100% / 3 - 40px);
             background-color: $main;
             border-radius: 16px;
-            height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 20px;
+            position: relative;
+            border: 0;
+
+            &:hover {
+                .description {
+                    display: block;
+                }
+            }
 
             img {
                 border-radius: 16px;
+                border: 0;
             }
 
-            span {
-                font-size: 1.2rem;
-                color: black;
-
-                i {
-                    color: $orange;
+            .description {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border-radius: 0 0 16px 16px;
+                height: 80px;
+                padding: 10px;
+                background-color: $main;
+                animation: slide-up .6s ease-out;
+                
+                a {
+                    color: black;
+                    text-decoration: none;
                 }
             }
         }
