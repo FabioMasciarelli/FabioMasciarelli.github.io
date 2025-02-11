@@ -20,6 +20,19 @@
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
+
+@keyframes slide-up {
+    from {
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
 .card {
     width: calc(100% / 3 - 40px);
     background-color: $main;

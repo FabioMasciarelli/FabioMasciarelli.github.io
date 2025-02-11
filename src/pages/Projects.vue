@@ -36,18 +36,6 @@ export default {
     }
 }
 
-@keyframes slide-up {
-    from {
-        bottom: -20px;
-        opacity: 0;
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1;
-    }
-}
-
 section {
     padding: 50px;
     animation: slide-down 1s ease-out;
