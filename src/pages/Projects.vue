@@ -63,22 +63,18 @@ section {
         .card {
             width: calc(100% / 3 - 40px);
             background-color: $main;
-            border-radius: 16px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             position: relative;
-            border: 0;
 
             &:hover {
+                box-shadow: 0 0 20px rgba($orange, 0.6);
+                transition: all .6s ease-out;
+
                 .description {
                     display: block;
                 }
-            }
-
-            img {
-                border-radius: 16px;
-                border: 0;
             }
 
             .description {
@@ -87,7 +83,6 @@ section {
                 bottom: 0;
                 left: 0;
                 width: 100%;
-                border-radius: 0 0 16px 16px;
                 height: 80px;
                 padding: 10px;
                 background-color: $main;
