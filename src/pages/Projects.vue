@@ -69,7 +69,7 @@ section {
             position: relative;
 
             &:hover {
-                box-shadow: 0 0 20px rgba($orange, 0.6);
+                box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.6);
                 transition: all .6s ease-out;
 
                 .description {
