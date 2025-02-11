@@ -11,7 +11,7 @@
         <ul class="projects">
             <li class="card">
                 <img src="../assets/img/fm.jpg" alt="">
-                <div class="description"><a href="">Transport Site</a></div>
+                <a class="description" href="https://transportsite.netlify.app">Transport Site</a>
             </li>
             <li class="card"></li>
             <li class="card"></li>
@@ -87,11 +87,9 @@ section {
                 padding: 10px;
                 background-color: $main;
                 animation: slide-up .6s ease-out;
-                
-                a {
-                    color: black;
-                    text-decoration: none;
-                }
+                color: black;
+                text-decoration: none;
+                text-align: center;
             }
         }
     }
