@@ -25,6 +25,10 @@
         <img src="../assets/img/projects/dottoressalagatta.jpeg" alt="www.dottoressalagatta.it">
         <a class="description" href="https://www.dottoressalagatta.it/">www.dottoressalagatta.it</a>
     </li>
+    <li class="card">
+        <img src="../assets/img/projects/b-doctor.jpeg" alt="b-doctor">
+        <a href="https://bdoctor.netlify.app" class="description">B-Doctor</a>
+    </li>
 
 </template>
 
