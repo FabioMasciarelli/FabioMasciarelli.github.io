@@ -62,6 +62,8 @@ section {
             height: 300px;
             aspect-ratio: 1;
             border-radius: 50%;
+            border: 2px solid $orange;
+            padding: 5px;
         }
     }
 }

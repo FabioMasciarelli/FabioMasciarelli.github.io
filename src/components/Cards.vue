@@ -14,9 +14,6 @@
         <router-link :to="{ name: 'networking' }" class="description">Networking</router-link>
     </li>
     <li class="card"></li>
-    <li class="card"></li>
-    <li class="card"></li>
-    <li class="card"></li>
 
 </template>
 
@@ -43,6 +40,7 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+    height: 230px;
 
     &:hover {
         box-shadow: 0 0 6px 6px rgba($main, 0.8);
@@ -70,6 +68,7 @@
         color: black;
         text-decoration: none;
         text-align: center;
+        font-size: 1.2rem;
     }
 }
 </style>

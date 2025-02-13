@@ -4,7 +4,7 @@ import About from './pages/About.vue';
 import Home from './pages/HomePage.vue';
 import Contact from './pages/Contact.vue';
 import Projects from './pages/Projects.vue';
-import NetworkingProject from './components/NetworkingProject.vue';
+import NetworkingProject from './pages/NetworkingProject.vue';
 
 export const router = createRouter({
     history: createWebHistory(),
