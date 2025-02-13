@@ -60,7 +60,8 @@ section {
 
         img {
             height: 300px;
-            width: auto;
+            aspect-ratio: 1;
+            border-radius: 50%;
         }
     }
 }

@@ -4,6 +4,7 @@ import About from './pages/About.vue';
 import Home from './pages/HomePage.vue';
 import Contact from './pages/Contact.vue';
 import Projects from './pages/Projects.vue';
+import NetworkingProject from './components/NetworkingProject.vue';
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -27,6 +28,11 @@ export const router = createRouter({
             path: "/contact",
             name: "contact",
             component: Contact
+        },
+        {
+            path: "/networking",
+            name: "networking",
+            component: NetworkingProject
         }
     ]
 })

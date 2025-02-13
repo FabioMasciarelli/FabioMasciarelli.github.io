@@ -6,10 +6,13 @@
 
 <template>
     <li class="card">
-        <img src="../assets/img/projects/logisticSite.jpeg" alt="">
+        <img src="../assets/img/projects/logisticSite.jpeg" alt="logistic-site">
         <a class="description" href="https://transportsite.netlify.app">Logistic Site</a>
     </li>
-    <li class="card"></li>
+    <li class="card">
+        <img src="../assets/img/projects/networking.jpg" alt="networking-project">
+        <router-link :to="{ name: 'networking' }" class="description">Networking</router-link>
+    </li>
     <li class="card"></li>
     <li class="card"></li>
     <li class="card"></li>
@@ -42,12 +45,16 @@
     position: relative;
 
     &:hover {
-        box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 0 6px 6px rgba($main, 0.8);
         transition: all .6s ease-out;
 
         .description {
             display: block;
         }
+    }
+
+    img {
+        height: 100%;
     }
 
     .description {

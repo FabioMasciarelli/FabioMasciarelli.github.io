@@ -22,10 +22,10 @@ export default {
 
     <div>
         <nav class="nav-link">
-            <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }" @click="store.presentation = true">Home</router-link>
-            <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }" @click="store.presentation = false">About</router-link>
-            <router-link :to="{ name: 'projects' }":class="{ 'active': $route.name === 'projects' }" @click="presentation = false">Projects</router-link>
-            <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }" @click="store.presentation = false">Contact</router-link>
+            <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }">Home</router-link>
+            <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }">About</router-link>
+            <router-link :to="{ name: 'projects' }":class="{ 'active': $route.name === 'projects' }">Projects</router-link>
+            <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }">Contact</router-link>
         </nav>
     </div>
 </template>
