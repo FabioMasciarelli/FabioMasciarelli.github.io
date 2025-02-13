@@ -64,6 +64,10 @@
         .description {
             display: block;
         }
+
+        img {
+            filter: brightness(40%);
+        }
     }
 
     img {
