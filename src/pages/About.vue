@@ -59,7 +59,7 @@ section {
         }
 
         img {
-            height: 300px;
+            height: 250px;
             aspect-ratio: 1;
             border-radius: 50%;
             border: 2px solid $orange;

@@ -11,7 +11,7 @@
     </li>
     <li class="card">
         <img src="../assets/img/projects/networking.jpg" alt="networking-project">
-        <router-link :to="{ name: 'networking' }" class="description">Networking</router-link>
+        <router-link :to="{ name: 'networking' }" class="description">Networking project</router-link>
     </li>
     <li class="card">
         <img src="../assets/img/projects/legalebenedetti.jpeg" alt="legale-benedetti">
@@ -80,6 +80,7 @@
         text-decoration: none;
         text-align: center;
         font-size: 1.2rem;
+        font-weight: bold;
     }
 }
 </style>
