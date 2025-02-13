@@ -13,7 +13,18 @@
         <img src="../assets/img/projects/networking.jpg" alt="networking-project">
         <router-link :to="{ name: 'networking' }" class="description">Networking</router-link>
     </li>
-    <li class="card"></li>
+    <li class="card">
+        <img src="../assets/img/projects/legalebenedetti.jpeg" alt="legale-benedetti">
+        <a class="description" href="https://www.legalebenedetti.it/">www.legalebenedetti.it</a>
+    </li>
+    <li class="card">
+        <img src="../assets/img/projects/dc-comics.jpeg" alt="dc-comics">
+        <a class="description" href="https://dcomics.netlify.app">DC-Comics</a>
+    </li>
+    <li class="card">
+        <img src="../assets/img/projects/dottoressalagatta.jpeg" alt="www.dottoressalagatta.it">
+        <a class="description" href="https://www.dottoressalagatta.it/">www.dottoressalagatta.it</a>
+    </li>
 
 </template>
 
