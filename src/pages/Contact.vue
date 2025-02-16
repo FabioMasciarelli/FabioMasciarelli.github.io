@@ -47,7 +47,7 @@
 
 .wrapper .icon {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba($main, 0.3);
     border-radius: 50%;
     margin: 10px;
     width: 100px;
@@ -129,7 +129,7 @@ section {
         justify-content: space-between;
 
         li {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba($main, 0.3);
             padding: 10px;
             border-radius: 50%;
             width: 100px;
