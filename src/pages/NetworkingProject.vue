@@ -69,10 +69,12 @@ section {
             background-color: $orange;
             border-radius: 16px;
             color: white;
-            width: 10%;
+            width: 15%;
             display: flex;
+            align-items: center;
             gap: 10px;
             transition: transform .3s linear;
+            font-size: 1.5rem;
 
             &:hover {
                 transform: scale(1.1);
