@@ -7,7 +7,7 @@
 <section>
     <header>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere vel officia odio ullam modi voluptatem voluptates ab ipsum, dolor nemo quia officiis ea amet quae placeat tempore vitae. Libero?
-        <a href="../assets/Final Project Networking.pkt" download>Download<i class="fa-solid fa-download"></i></a>
+        <a href="../assets/Final Project Networking.pkt.zip" download><button>Download</button><i class="fa-solid fa-download"></i></a>
     </header>
     <div class="container" id="first">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora possimus consectetur nobis. Nam voluptas nesciunt ratione itaque numquam, nihil quia impedit aperiam. Laboriosam, distinctio repellendus! Quo amet exercitationem doloribus?</p>
