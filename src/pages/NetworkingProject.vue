@@ -4,28 +4,24 @@
 
 
 <template>
-<section>
-    <header>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere vel officia odio ullam modi voluptatem voluptates ab ipsum, dolor nemo quia officiis ea amet quae placeat tempore vitae. Libero?
-        <a href="../assets/Final Project Networking.pkt.zip" download>Download<i class="fa-solid fa-download"></i></a>
-    </header>
-    <div class="container" id="first">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora possimus consectetur nobis. Nam voluptas nesciunt ratione itaque numquam, nihil quia impedit aperiam. Laboriosam, distinctio repellendus! Quo amet exercitationem doloribus?</p>
-        <img src="../assets/img/networking project/Serial.jpeg" alt="">
-    </div>
-    <div class="container">
-        <img src="../assets/img/networking project/s1.jpeg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora possimus consectetur nobis. Nam voluptas nesciunt ratione itaque numquam, nihil quia impedit aperiam. Laboriosam, distinctio repellendus! Quo amet exercitationem doloribus?</p>
-    </div>
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora possimus consectetur nobis. Nam voluptas nesciunt ratione itaque numquam, nihil quia impedit aperiam. Laboriosam, distinctio repellendus! Quo amet exercitationem doloribus?</p>
-        <img src="../assets/img/networking project/WLANs1.jpeg" alt="">
-    </div>
-    <div class="container">
-        <img src="../assets/img/networking project/s3.jpeg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora possimus consectetur nobis. Nam voluptas nesciunt ratione itaque numquam, nihil quia impedit aperiam. Laboriosam, distinctio repellendus! Quo amet exercitationem doloribus?</p>
-    </div>
-</section>
+    <section>
+        <header>
+            Progetto che ha come scopo principale quello di collegare tre sedi tramite tre router, uno per ogni sede attraverso le porte seriali.
+            <a href="../assets/Final Project Networking.pkt.zip" download>Download<i class="fa-solid fa-download"></i></a>
+        </header>
+        <div class="container" id="first">
+            <p>Il primo passo è quello di andare a collegare con un routign statico i router delle sedi tramite porte seriali. Per fare ciò basterà andare sul router di partenza e nella sezione Routing Dinamico andremo a riempire i seguenti campi: Network (indirizzo IP della rete di destinazione), Subnet Mask e Next Hop (Indirizzo IP configurato tra le porte seriali collegate dei due router).</p>
+            <img src="../assets/img/networking project/Serial.jpeg" alt="">
+        </div>
+        <div class="container">
+            <img src="../assets/img/networking project/s1.jpeg" alt="">
+            <p>Dopo aver effettuato il collegamento tra router andremo ad inserire uno switch a cui andremo a collegare prima di tutto un Server con DHCP(Dynamic Host Configuration Protocol), in modo che gli indirizzi IP vengano dati in modo automatico a tutti i dispositivi della rete. Dovremo impostare anche i dispositivi su DHCP. Dopodichè potremo andare ad inserire anche un Access Point impostando un SSID che verrà poi anche riportato sui pc nella sezione 'wireless'.</p>
+        </div>
+        <div class="container">
+            <p>Tra le sedi possiamo anche andare ad impostare delle VLAN(Virtual Local Area Network). In questo esempio vediamo una sede divisa su due piani, in cui ogni piano ha una VLAN dedicata. Per fare ciò avremo bisogno di tre switch. Uno switch centrale che andrà a collegarsi agli switch di ogni piano tramite il collegamento 'Copper Cross Over'. Dopodichè dal router pirncipale andremo and inserire nel VLAN Database il numero di VLAN per ogni switch e il rispettivo nome(es. VLAN Number:90, VLAN name: piano1). Una volta aggiunte le VLAN al database basterà impostare ad ogni switch alla relativa porta che li collega la VLAN dedicata.</p>
+            <img src="../assets/img/networking project/WLANs1.jpeg" alt="">
+        </div>
+    </section>
 
 </template>
 
