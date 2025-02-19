@@ -1,4 +1,24 @@
 <script>
+export default {
+    methods: {
+        downloadFile() {
+            // URL del file .pkt da scaricare
+            const fileUrl = '../assets/FinalProject.pkt';
+
+            // Creare un link temporaneo
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.setAttribute('download', 'FinalProject.pkt'); // Nome del file da scaricare
+            document.body.appendChild(link);
+
+            // Simulare il click sul link
+            link.click();
+
+            // Rimuovere il link dal DOM
+            document.body.removeChild(link);
+        }
+    }
+}
 
 </script>
 
@@ -6,23 +26,38 @@
 <template>
     <section>
         <header>
-            Progetto che ha come scopo principale quello di collegare tre sedi tramite tre router, uno per ogni sede attraverso le porte seriali.
-            <a href="../assets/Final Project Networking.pkt.zip" download>Download<i class="fa-solid fa-download"></i></a>
+            <h1></h1>
+            <h3>Progetto che ha come scopo principale quello di collegare tre sedi tramite tre router, uno per ogni sede
+                attraverso le porte seriali.</h3>
+            <img src="../assets/img/networking project/project.jpeg" alt="">
+            <button @click="downloadFile()">Download<i class="fa-solid fa-download"></i></button>
         </header>
         <div class="container" id="first">
-            <p>Il primo passo è quello di andare a collegare con un routign statico i router delle sedi tramite porte seriali. Per fare ciò basterà andare sul router di partenza e nella sezione Routing Dinamico andremo a riempire i seguenti campi: Network (indirizzo IP della rete di destinazione), Subnet Mask e Next Hop (Indirizzo IP configurato tra le porte seriali collegate dei due router).</p>
+            <p>Il primo passo è quello di andare a collegare con un routign statico i router delle sedi tramite porte
+                seriali. Per fare ciò basterà andare sul router di partenza e nella sezione Routing Dinamico andremo a
+                riempire i seguenti campi: Network (indirizzo IP della rete di destinazione), Subnet Mask e Next Hop
+                (Indirizzo IP configurato tra le porte seriali collegate dei due router).</p>
             <img src="../assets/img/networking project/Serial.jpeg" alt="">
         </div>
         <div class="container">
             <img src="../assets/img/networking project/s1.jpeg" alt="">
-            <p>Dopo aver effettuato il collegamento tra router andremo ad inserire uno switch a cui andremo a collegare prima di tutto un Server con DHCP(Dynamic Host Configuration Protocol), in modo che gli indirizzi IP vengano dati in modo automatico a tutti i dispositivi della rete. Dovremo impostare anche i dispositivi su DHCP. Dopodichè potremo andare ad inserire anche un Access Point impostando un SSID che verrà poi anche riportato sui pc nella sezione 'wireless'.</p>
+            <p>Dopo aver effettuato il collegamento tra router andremo ad inserire uno switch a cui andremo a collegare
+                prima di tutto un Server con DHCP(Dynamic Host Configuration Protocol), in modo che gli indirizzi IP
+                vengano dati in modo automatico a tutti i dispositivi della rete. Dovremo impostare anche i dispositivi
+                su DHCP. Dopodichè potremo andare ad inserire anche un Access Point impostando un SSID che verrà poi
+                anche riportato sui pc nella sezione 'wireless'.</p>
         </div>
         <div class="container">
-            <p>Tra le sedi possiamo anche andare ad impostare delle VLAN(Virtual Local Area Network). In questo esempio vediamo una sede divisa su due piani, in cui ogni piano ha una VLAN dedicata. Per fare ciò avremo bisogno di tre switch. Uno switch centrale che andrà a collegarsi agli switch di ogni piano tramite il collegamento 'Copper Cross Over'. Dopodichè dal router pirncipale andremo and inserire nel VLAN Database il numero di VLAN per ogni switch e il rispettivo nome(es. VLAN Number:90, VLAN name: piano1). Una volta aggiunte le VLAN al database basterà impostare ad ogni switch alla relativa porta che li collega la VLAN dedicata.</p>
+            <p>Tra le sedi possiamo anche andare ad impostare delle VLAN(Virtual Local Area Network). In questo esempio
+                vediamo una sede divisa su due piani, in cui ogni piano ha una VLAN dedicata. Per fare ciò avremo
+                bisogno di tre switch. Uno switch centrale che andrà a collegarsi agli switch di ogni piano tramite il
+                collegamento 'Copper Cross Over'. Dopodichè dal router pirncipale andremo and inserire nel VLAN Database
+                il numero di VLAN per ogni switch e il rispettivo nome(es. VLAN Number:90, VLAN name: piano1). Una volta
+                aggiunte le VLAN al database basterà impostare ad ogni switch alla relativa porta che li collega la VLAN
+                dedicata.</p>
             <img src="../assets/img/networking project/WLANs1.jpeg" alt="">
         </div>
     </section>
-
 </template>
 
 
@@ -49,15 +84,22 @@ section {
     animation: slide-down 1s ease-out;
 
     header {
-        height: 250px;
         background-color: rgba($main, 0.3);
         border-radius: 16px;
         padding: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 30px;
 
-        a {
+        img {
+            max-height: 60%;
+            border-radius: 16px;
+        }
+
+        button {
+            cursor: pointer;
+            border: 0;
             margin: 0 auto;
             text-align: center;
             text-decoration: none;
@@ -100,12 +142,12 @@ section {
 
         img {
             border-radius: 16px;
-            max-height: 100%;
-            max-width: 100%;
+            max-height: 60%;
+            max-width: 60%;
             transition: transform .3s linear;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.2);
             }
         }
     }
