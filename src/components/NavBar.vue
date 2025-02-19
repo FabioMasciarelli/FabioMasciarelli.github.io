@@ -24,7 +24,7 @@ export default {
         <nav class="nav-link">
             <router-link :to="{ name: 'home' }" :class="{ 'active': $route.name === 'home' }">Home</router-link>
             <router-link :to="{ name: 'about' }" :class="{ 'active': $route.name === 'about' }">About</router-link>
-            <router-link :to="{ name: 'projects' }":class="{ 'active': $route.name === 'projects' }">Projects</router-link>
+            <router-link :to="{ name: 'projects' }":class="{ 'active': $route.name === 'projects' || $route.name === 'networking' }">Projects</router-link>
             <router-link :to="{ name: 'contact' }" :class="{ 'active': $route.name === 'contact' }">Contact</router-link>
         </nav>
     </div>
