@@ -1,25 +1,4 @@
 <script>
-export default {
-    methods: {
-        downloadFile() {
-            // URL del file .pkt da scaricare
-            const fileUrl = '../assets/FinalProject.pkt';
-
-            // Creare un link temporaneo
-            const link = document.createElement('a');
-            link.href = fileUrl;
-            link.setAttribute('download', 'FinalProject.pkt'); // Nome del file da scaricare
-            document.body.appendChild(link);
-
-            // Simulare il click sul link
-            link.click();
-
-            // Rimuovere il link dal DOM
-            document.body.removeChild(link);
-        }
-    }
-}
-
 </script>
 
 
@@ -30,7 +9,6 @@ export default {
             <h3>Progetto che ha come scopo principale quello di collegare tre sedi tramite tre router, uno per ogni sede
                 attraverso le porte seriali.</h3>
             <img src="../assets/img/networking project/project.jpeg" alt="">
-            <button @click="downloadFile()">Download<i class="fa-solid fa-download"></i></button>
         </header>
         <div class="container" id="first">
             <p>Il primo passo è quello di andare a collegare con un routign statico i router delle sedi tramite porte
