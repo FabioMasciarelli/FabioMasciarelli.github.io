@@ -57,6 +57,10 @@ export default {
                 dedicata.</p>
             <img src="../assets/img/networking project/WLANs1.jpeg" alt="">
         </div>
+        <div class="container">
+            <img src="../assets/img/networking project/esempio VLAN.jpeg" alt="">
+            <p>Per accertarsi del corretto funzionamento delle VLAN basterà provare a effettuare una simulazione in cui proveremo a mandare un pacchetto da una VLAN ad un'altra. Se tutto è stato settato correttamente possiamo vedere come il pacchetto non partirà affatto dato che non troverà la rete dell'altra VLAN.</p>
+        </div>
     </section>
 </template>
 
