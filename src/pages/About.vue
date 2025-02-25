@@ -64,6 +64,7 @@ section {
             border-radius: 50%;
             border: 2px solid $orange;
             padding: 5px;
+            object-fit: cover;
         }
     }
 }
