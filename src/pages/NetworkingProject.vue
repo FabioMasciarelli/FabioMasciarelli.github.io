@@ -20,8 +20,8 @@
         <div class="container">
             <img src="../assets/img/networking project/s1.jpeg" alt="">
             <p>Dopo aver effettuato il collegamento tra router andremo ad inserire uno switch a cui andremo a collegare
-                prima di tutto un Server con DHCP(Dynamic Host Configuration Protocol), in modo che gli indirizzi IP
-                vengano dati in modo automatico a tutti i dispositivi della rete. Dovremo impostare anche i dispositivi
+                prima di tutto un Server con DHCP(Dynamic Host Configuration Protocol), in modo che la configurazione di rete (default gateway, indirizzo IP) venga fornita in modo automatico
+                a tutti i dispositivi della rete. Dovremo impostare anche i dispositivi
                 su DHCP. Dopodichè potremo andare ad inserire anche un Access Point impostando un SSID che verrà poi
                 anche riportato sui pc nella sezione 'wireless'.</p>
         </div>
@@ -29,7 +29,7 @@
             <p>Tra le sedi possiamo anche andare ad impostare delle VLAN(Virtual Local Area Network). In questo esempio
                 vediamo una sede divisa su due piani, in cui ogni piano ha una VLAN dedicata. Per fare ciò avremo
                 bisogno di tre switch. Uno switch centrale che andrà a collegarsi agli switch di ogni piano tramite il
-                collegamento 'Copper Cross Over'. Dopodichè dal router pirncipale andremo and inserire nel VLAN Database
+                collegamento 'Copper Cross Over'. Dopodichè dal router principale andremo and inserire nel VLAN Database
                 il numero di VLAN per ogni switch e il rispettivo nome(es. VLAN Number:90, VLAN name: piano1). Una volta
                 aggiunte le VLAN al database basterà impostare ad ogni switch alla relativa porta che li collega la VLAN
                 dedicata.</p>
