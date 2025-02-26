@@ -10,10 +10,6 @@
         <a class="description" href="https://transportsite.netlify.app">Logistic Site</a>
     </li>
     <li class="card">
-        <img src="../assets/img/projects/networking.jpg" alt="networking-project">
-        <router-link :to="{ name: 'networking' }" class="description">Networking project</router-link>
-    </li>
-    <li class="card">
         <img src="../assets/img/projects/legalebenedetti.jpeg" alt="legale-benedetti">
         <a class="description" href="https://www.legalebenedetti.it/">www.legalebenedetti.it</a>
     </li>
